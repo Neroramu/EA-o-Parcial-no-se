@@ -1,0 +1,19 @@
+<h1>Mental State Exams</h1>
+<div class="exams-container">
+  <div *ngFor="let exam of exams | async">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          Exam for {{ exam.patientName }}
+        </mat-card-title>
+        <mat-card-subtitle>
+          Born on {{ exam.birthDate }} - Exam Date: {{ exam.examDate }}
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Examiner: {{ exam.examinerName }} ({{ exam.examinerIdentifier }})</p>
+        <p>Total Score: {{ exam.totalScore }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

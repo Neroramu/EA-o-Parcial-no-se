@@ -1,0 +1,9 @@
+<mat-toolbar>
+  <div class="container">
+    <img src="https://hign.org/sites/default/files/2022-01/HIGN-logo-1200.png" alt="HIGN Logo" />
+    <button mat-button [routerLink]="['/home']">{{ 'HOME' | translate }}</button>
+    <button mat-button [routerLink]="['/nursing/mental-state-exams']">{{ 'MENTAL_STATE_EXAMS' | translate }}</button>
+    <button mat-button (click)="switchLanguage('en')"></button>
+    <button mat-button (click)="switchLanguage('es')"></button>
+  </div>
+</mat-toolbar>
